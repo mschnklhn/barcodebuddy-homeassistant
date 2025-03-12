@@ -22,6 +22,7 @@ RUN apk update && apk add --no-cache bash sed
 
 # Modify grabInput.sh directly to default to /dev/input/event2
 RUN sed -i 's|deviceToUse=""|deviceToUse="/dev/input/event2"|g' /app/bbuddy/example/grabInput.sh
+RUN sed -i '/if \[ \$# -eq 0 \]; then/,/fi/d' /app/bbuddy/example/grabInput.sh
 
 # Default command with the updated device argument for barcode scanner
 CMD ["/app/supervisor"]
