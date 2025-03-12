@@ -14,3 +14,4 @@ LABEL \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} 
 
+CMD ["/app/supervisor", "--attach-barcodescanner", "/dev/input/event2"]
