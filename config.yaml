@@ -36,4 +36,4 @@ schema:
 devices:
   - /dev/input/by-id/usb-0581_011c-event-kbd:/dev/input/event2
 environment:
-  ATTACH_BARCODESCANNER: true
+  ATTACH_BARCODESCANNER: "true"
