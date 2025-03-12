@@ -34,6 +34,6 @@ schema:
   curl_allow_insecure_ssl_ca: bool
   curl_allow_insecure_ssl_host: bool
 devices:
-  - "/dev/input/by-id/usb-0581_011c-event-kbd:/dev/input/event2"
+  - "/dev/input/event2"
 environment:
   ATTACH_BARCODESCANNER: "true"
