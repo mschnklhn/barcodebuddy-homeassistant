@@ -16,6 +16,12 @@
 
 This is the docker repo optimized for Home Assistant of [BarcodeBuddy](https://github.com/Forceu/barcodebuddy).
 
+### Custom Adjustments
+To use the USB Barcode Scanner efficiently, this custom repository adjusts some calls.
+Include your barcode scanner by changing the `/dev/input/eventX` in the `Dockerfile` and `config.yaml` to the eventX of your instance. The value can be found in the hardware tab of your Home Assistant install.
+There is likely a more user friendly way than to hardcode this - I was simply too lazy to do it, yet.
+
+
 ### Install Home Assistant
 
 ![](images/add-repo-url.png?raw=true)
